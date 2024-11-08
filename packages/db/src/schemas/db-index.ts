@@ -12,7 +12,7 @@ export const IndexSchema = new Schema<IIndex>(
     },
     type: {
       type: String,
-      enum: ["pinecone", "chromadb"],
+      enum: ["pinecone", "chromadb", "qdrant"],
       default: "pinecone",
     },
     dataSources: [

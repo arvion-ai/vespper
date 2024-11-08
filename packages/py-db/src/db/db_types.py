@@ -38,7 +38,7 @@ class Index(CommonDBModel):
     organization: Union[PyObjectId, Organization]
     dataSources: List[str]
     name: str
-    type: Literal["chromadb", "pinecone"]
+    type: Literal["chromadb", "pinecone", "qdrant"]
     stats: Optional[dict] = None
     state: IndexState
 

@@ -104,7 +104,7 @@ export interface IVendor {
 export interface IIndex {
   _id: Types.ObjectId;
   name: string;
-  type: "pinecone" | "chromadb";
+  type: "pinecone" | "chromadb" | "qdrant";
   organization: Types.ObjectId | IOrganization;
   dataSources: VendorName[];
   state: {

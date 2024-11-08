@@ -1,6 +1,7 @@
 import os
 from rag.pinecone import PineconeVectorStore
 from rag.chromadb import ChromaDBVectorStore
+from rag.qdrant import QdrantVectorStore
 
 
 def get_vector_store(index_name, index_type):
@@ -17,5 +18,11 @@ def get_vector_store(index_name, index_type):
         if not host or not api_key:
             raise ValueError("CHROMA_HOST and CHROMA_API_KEY are required for ChromaDB")
         return ChromaDBVectorStore(host, port, api_key, ssl, index_name)
+    if index_type == "qdrant":
+        url = os.getenv("QDRANT_URL")
+        api_key = os.getenv("QDRANT_API_KEY")
+        if not url:
+            raise ValueError("QDRANT_URL is required for Qdrant")
+        return QdrantVectorStore(url, index_name, api_key)
     else:
         raise ValueError(f"Invalid index type: {index_type}")

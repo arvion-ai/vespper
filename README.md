@@ -36,6 +36,8 @@
 Note: If you want to use vespper for your team or for your organisation please reach out to us.
 This open-source project is suited for single individual use. Any advanced investigation features will be under vespper-ee.
 
+you can leave your email to be notified when our cloud offering is available: https://tally.so/r/3EBa5l
+
 </p>
 
 

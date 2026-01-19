@@ -24,7 +24,7 @@
     "dotenv-cli": "^7.4.2",
     "express": "4.17.1",
     "express-oauth2-jwt-bearer": "^1.6.0",
-    "langchain": "^0.0.209",
+    "langchain": "^1.2.10",
     "langfuse": "^2.3.4",
     "langfuse-langchain": "^2.3.4",
     "llamaindex": "^0.1.16",

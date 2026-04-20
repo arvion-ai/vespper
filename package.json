@@ -7,7 +7,7 @@
   },
   "private": true,
   "dependencies": {
-    "@nx-tools/container-metadata": "^5.3.0",
+    "@nx-tools/container-metadata": "^7.2.1",
     "@nx-tools/nx-container": "^5.3.0",
     "@nx/eslint": "18.2.4",
     "@nx/jest": "18.2.4",

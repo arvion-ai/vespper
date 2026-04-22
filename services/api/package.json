@@ -27,7 +27,7 @@
     "langchain": "^0.0.209",
     "langfuse": "^2.3.4",
     "langfuse-langchain": "^2.3.4",
-    "llamaindex": "^0.1.16",
+    "llamaindex": "^0.12.1",
     "mongoose": "^8.0.2",
     "mongoose-field-encryption": "^7.0.1",
     "node-cron": "^3.0.3",

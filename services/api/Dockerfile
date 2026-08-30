@@ -1,5 +1,5 @@
 # First phase - install monorepo's dependencies
-FROM node:18.18.2-alpine as dependencies
+FROM node:20-alpine as dependencies
 
 WORKDIR /app
 

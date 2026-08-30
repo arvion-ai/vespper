@@ -7,7 +7,7 @@ import uvicorn
 from providers.coralogix.processor import analyze_logs
 from providers.coralogix.models import CoralogixParseLogsRequest
 
-app = FastAPI()
+app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
 
 
 @app.post("/parse/coralogix")
